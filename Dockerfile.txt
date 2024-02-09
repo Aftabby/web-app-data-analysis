@@ -1,0 +1,6 @@
+FROM python:3.8
+WORKDIR /Python_Pandas _project_07
+COPY requirements.txt .
+RUN pip install -r requirements.txt
+COPY . .
+CMD ["streamlit", "run", "your_script.py"]
